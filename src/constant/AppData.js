@@ -5,11 +5,11 @@ export const NavbarData = [
   },
   {
     id: 2,
-    title: "about",
+    title: "Buy",
   },
   {
     id: 3,
-    title: "rewards",
+    title: "wallet",
   },
   {
     id: 4,
@@ -17,16 +17,9 @@ export const NavbarData = [
   },
   {
     id: 5,
-    title: "tokenomics",
+    title: "referral",
   },
-  {
-    id: 6,
-    title: "whitePaper",
-  },
-  {
-    id: 7,
-    title: "roadmap",
-  },
+
 ];
 
 // Takenomics data
@@ -137,60 +130,68 @@ export const TeamData = [
 ];
 
 // account menu items data
-import wallet from "../assets/images/wallet-passes-app.png";
+import { BiWallet, BiBadgeCheck, BiGift } from "react-icons/bi";
+import {
+  FaCoins,
+  FaUsers,
+  FaAward,
+  FaProjectDiagram,
+  FaRandom,
+  FaCogs,
+} from "react-icons/fa";
 export const menuItems = [
   {
     href: "/account/",
     className: "account_menu this_menu",
-    imgSrc: wallet,
+    icon: BiWallet,
     label: "Wallet",
   },
   {
     href: "/account/buy",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: FaCoins,
     label: "Buy QUOK Token",
   },
   {
     href: "/account/staking",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: BiBadgeCheck,
     label: "Staking",
   },
   {
     href: "/account/referrals",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: FaUsers,
     label: "Referrals",
   },
   {
     href: "/account/rewards",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: FaAward,
     label: "Daily Rewards",
   },
   {
     href: "/account/airdrop",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: FaProjectDiagram,
     label: "Airdrop",
   },
   {
     href: "/account/bounties",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: BiGift,
     label: "Bounties",
   },
   {
     href: "/account/transactions",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: FaRandom,
     label: "Transactions",
   },
   {
     href: "/account/settings",
     className: "account_menu",
-    imgSrc: wallet,
+    icon: FaCogs,
     label: "Settings",
   },
 ];

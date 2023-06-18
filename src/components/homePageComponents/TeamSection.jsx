@@ -3,7 +3,7 @@ import teamPattern from "../../assets/images/svg3.svg";
 export default function TeamSection() {
   return (
     <>
-      <div className="tea-section py-28">
+      <div className="tea-section py-16">
         <h2 className="font-bold text-[2rem] leading-[1.4] text-center mb-10">
           Team
         </h2>

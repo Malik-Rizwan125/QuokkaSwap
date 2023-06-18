@@ -44,12 +44,12 @@ export default function Header() {
           <div className="hidden xl:flex items-center z-0">
             <CustomButton
               title="login"
-              className="custom-button auth-button mx-4 text-base font-extrabold capitalize leading-[16px]"
+              className="custom-btn-hover auth-button mx-4 text-base font-extrabold capitalize leading-[16px]"
               path="/account"
             />
             <CustomButton
               title="signup"
-              className="custom-button auth-button mx-4 text-base font-extrabold capitalize leading-[16px]"
+              className="custom-btn-hover auth-button mx-4 text-base font-extrabold capitalize leading-[16px]"
             />
           </div>
           <div

@@ -18,7 +18,7 @@ export default function Footer() {
                   <img src={logo} />
                   <div className="perlinlink__text">
                     <p>QuokkaSwap</p>
-                    <span className="text-[13px]">Projects</span>
+                    <span>Projects</span>
                   </div>
                 </a>
               </li>

@@ -4,12 +4,13 @@ export default function RoadMap() {
   return (
     <>
       <div className="pt-32 mb-10 mx-auto">
+      
         <div className="relative pt-[80px]">
-          <h2 className="text-center font-bold text-[32px]">
+        <h2 className="text-center font-bold text-[32px] mb-[30px]">
             Road Map
           </h2>
           <div
-            className="border-2-2 absolute h-full border border-line"
+            className="border-2-2 absolute border border-line"
             style={{ borderColor: "#407dd9" }}
           ></div>
       <img class="pattern pattern-2" src={pattern1}></img>
@@ -75,7 +76,7 @@ export default function RoadMap() {
             <div className="z-20 flex items-center  rounded-full ">
               {/* <h1 className="mx-auto text-white font-normal text-[13px] right-box"></h1> */}
             </div>
-            <div className=" rounded-lg shadow-xl box-bg-clr box-width-right mt-[30px] lg:mt-[-40px]">
+            <div className=" rounded-lg shadow-xl box-bg-clr box-width-right mt-[30px] mb-[40px] lg:mt-[-40px]">
             <span className="mb-2 text-[13px] font-normal text-white">
                 Q2 2024:
               </span>
@@ -89,69 +90,9 @@ export default function RoadMap() {
           </div>
           <h2
             className=" absolute w-2 h-2 rounded-full text-white bg-theme-clr circle"
-            style={{ bottom: "-130px" }}
+            style={{ bottom: "0px" }}
           ></h2> 
-          {/* <div className="mb-8 flex justify-between flex-row lg:flex-row-reverse  w-full lg:w-5/6 items-center lg:ml-auto left-timeline posi-relative">
-            <div className="z-20 flex items-center  rounded-full">
-              <h1 className="mx-auto text-white font-normal text-[13px] right-box"></h1>
-            </div>
-            <div className=" rounded-lg shadow-xl mr-[14%] sm:mr-[8%] lg:mr-[0px] w-[80%] sm:w-[66%] lg:w-[33%] box-bg-clr">
-              <span className="mb-2 text-[13px] font-normal text-white">
-                Q3 2023
-              </span>
-              <ul className="text-white list-disc mt-2">
-                <li>Start Community</li>
-                <li>Smart contracts & audit</li>
-                <li>Whitepaper released </li>
-                <li>Analyzing/Creating Tokenomics Quokka</li>
-                <li>Start Airdrop/Bounty/Staking</li>
-                <li>Token Publick Sale QUOK</li>
-                <li>Launch Quokkaswap/exchange demo</li>
-              </ul>
-            </div>
-          </div>
 
-          <button className="absolute mt-2 bg-theme-clr year-btn">2024</button>
-          <div className="mb-8 mt-32 flex justify-between items-center w-full lg:w-5/6 right-timeline posi-relative">
-            <div className="z-20 flex items-center  rounded-full">
-              <h1 className="mx-auto font-normal text-[13px] text-white left-box"></h1>
-            </div>
-            <div className=" rounded-lg shadow-xl mr-[14%] sm:mr-[8%] lg:mr-[0px] w-[80%] sm:w-[66%] lg:w-[33%] box-bg-clr">
-            <span className="mb-2 text-[13px] font-normal text-white">
-                Q1 2024:
-              </span>
-              <ul className="text-white list-disc mt-2">
-                <li>Coingecko Listing</li>
-                <li>Coinmarketcap Listing</li>
-                <li>Listing Pancakeswap QUOK</li>
-                <li>Listing Price $0.1 USD</li>
-                <li>Interface dev for QuokkaSwap.com</li>
-                <li>End Airdrop/Bounty</li>
-                <li>Partners/Contracts/Marketing</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-8 flex justify-between  flex-row lg:flex-row-reverse w-full lg:w-5/6   items-center lg:ml-auto left-timeline posi-relative">
-            <div className="z-20 flex items-center rounded-full">
-              <h1 className="mx-auto text-white font-normal text-[13px] right-box"></h1>
-            </div>
-            <div className=" rounded-lg shadow-xl mr-[14%] sm:mr-[8%] lg:mr-[0px] w-[80%] sm:w-[66%] lg:w-[33%] box-bg-clr">
-              <span className="mb-2 text-[13px] font-normal text-white">
-                Q2 2024:
-              </span>
-              <ul className="text-white list-disc mt-2">
-                <li>End Staking </li>
-                <li>Audit Publick Sale QUOK</li>
-                <li>Burn unused QUOK</li>
-                <li>Completion dev Quokkaswap.com Q3/Q4 2024.</li>
-              </ul>
-            </div>
-          </div>
-          <h2
-            className=" absolute w-2 h-2 rounded-full text-white bg-theme-clr circle"
-            style={{ bottom: "0" }}
-          ></h2> */}
         </div>
       </div>
     </>

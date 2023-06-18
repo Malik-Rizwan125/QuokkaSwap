@@ -1027,23 +1027,23 @@ body {
     left: 22% !important;
   }
   .year-btn:before{
-    width: 52% !important;
+    width: 62% !important;
   }
   }
   @media only screen and (max-width: 393px) {
     .year-btn:before{
-      width: 48% !important;
+      width: 58% !important;
     }
     }
     @media only screen and (max-width: 375px) {
       .year-btn:before{
-        width: 45% !important;
+        width: 55% !important;
       }
       }
     
       @media only screen and (max-width: 360px) {
         .year-btn:before{
-          width: 40% !important;
+          width: 50% !important;
         }
         }
 

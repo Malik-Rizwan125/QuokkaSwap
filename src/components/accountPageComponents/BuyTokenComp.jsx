@@ -5,7 +5,7 @@ import coin from "../../assets/images/coin_1.png";
 export default function BuyTokenComp() {
   return (
     <>
-      <div className="accoint_content_bar">
+      <div className="container mx-auto accoint_content_bar">
         <div
           className="acc_window one_ls aos-init aos-animate"
           data-aos="zoom-in"

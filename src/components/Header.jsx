@@ -35,11 +35,11 @@ export default function Header() {
           <ul className="hidden xl:flex">
             {NavbarData.map((item, index) => (
               <li key={index} className="mx-4">
-                <a className="font-semibold text-base capitalize cursor-pointer">
+                <Link className="font-semibold text-base capitalize cursor-pointer" to={item.path}>
                   {item.title}
-                </a>
+                </Link>
               </li>
-            ))}
+            ))}
           </ul>
           <div className="hidden xl:flex items-center z-0">
             <CustomButton
@@ -70,29 +70,23 @@ export default function Header() {
               : "navbar-menu"
           }
         >
-          <ul className="navbar-menu__links">
+         <ul className="navbar-menu__links">
             <li>
-              <a href="/#home">Home</a>
+              <Link to="/">Home</Link>
+            </li>  
+            <Link to="/buy">
+              <li>
+              <a href=""> Buy</a> 
+              </li>
+            </Link>
+            <li>
+              <Link to="/wallet">Wallet</Link>
             </li>
             <li>
-              <a href="/#about">About</a>
+              <Link to="/staking">Staking</Link>
             </li>
             <li>
-              <a href="/rewards">Rewards</a>
-            </li>
-            <li>
-              <a href="/staking">Staking</a>
-            </li>
-            <li>
-              <a href="/#tokenomics">Tokenomics</a>
-            </li>
-            <li>
-              <a href="/WhitePaper.pdf" target="_blank">
-                WhitePaper
-              </a>
-            </li>
-            <li>
-              <a href="/#roadmap">Roadmap</a>
+              <Link to="/referals">Referral</Link>
             </li>
           </ul>
           <ul className="navbar__links-menu">

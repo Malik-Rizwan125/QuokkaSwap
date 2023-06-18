@@ -2,7 +2,7 @@ import coin from "../../assets/images/coin_1.png";
 export default function StackingComponent() {
   return (
     <>
-      <div class="accoint_content_bar">
+      <div class="container mx-auto accoint_content_bar">
         <div class="acc_window all_ls aos-init aos-animate" data-aos="zoom-in">
           <div>
             <div class="name_page">Staking</div>

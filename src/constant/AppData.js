@@ -2,22 +2,27 @@ export const NavbarData = [
   {
     id: 1,
     title: "home",
+    path:"/"
   },
   {
     id: 2,
     title: "Buy",
+    path:"/buy"
   },
   {
     id: 3,
     title: "wallet",
+    path:"/wallet"
   },
   {
     id: 4,
     title: "staking",
+    path:"/staking"
   },
   {
     id: 5,
     title: "referral",
+    path:"/referals"
   },
 
 ];

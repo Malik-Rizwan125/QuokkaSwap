@@ -1,7 +1,7 @@
 export default function RaferalsComponent() {
   return (
     <>
-      <div class="accoint_content_bar">
+      <div class="container mx-auto accoint_content_bar">
         <div class="acc_window one_ls aos-init aos-animate" data-aos="zoom-in">
           <div>
             <div class="name_page">Referral Program</div>

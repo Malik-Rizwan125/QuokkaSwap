@@ -19,7 +19,7 @@ export default function StackingComponent() {
                   <p>15.00% per month</p>
                 </div>
                 <div>
-                  <p>6 Month</p>
+                  <p className="text-center">6 Month</p>
                   <p>35.00% per month</p>
                 </div>{" "}
               </div>
@@ -60,13 +60,17 @@ export default function StackingComponent() {
           <div class="staking_list pad_b_0" id="stakings_">
             <div class="table_bouties staking_table">
               <div class="rd_bounti">
+                <div className="flex justify-between w-full md:w-3/5 md:pr-8 mb-2 md:mb-0">
                 <div>Start time</div>
                 <div>Amount</div>
                 <div>Earnings</div>
                 <div>Total</div>
+                </div>
+                <div className="flex justify-between w-full md:w-2/5 ">
                 <div>End time</div>
                 <div>Program</div>
                 <div>Status</div>
+                </div>
               </div>
               <p class="trans_no">No data</p>
             </div>

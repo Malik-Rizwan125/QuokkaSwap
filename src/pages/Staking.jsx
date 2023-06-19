@@ -1,7 +1,7 @@
 import React from 'react'
 import StackingComponent from '../components/accountPageComponents/StakingComponent'
 import LeftMenuBar from '../components/accountPageComponents/LeftMenuBar'
-
+import Footer from "../components/homePageComponents/Footer";
 export default function Staking() {
   return (
     <>
@@ -11,6 +11,7 @@ export default function Staking() {
                  <StackingComponent />
 </section>
 </div>
+{/* <Footer /> */}
     </>
 
   )

@@ -32,6 +32,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --color-1: #19ded1;
+  --color-2: #407dd9;
+  --color-3: #5644ff;
+  --color-4: #1a0066;
+  --color-blur: linear-gradient(
+    120deg,
+    rgb(1 43 106 / 40%),
+    rgb(139 19 239 / 40%),
+    rgb(43 0 255 / 40%),
+    rgb(11 68 255 / 40%),
+    rgb(1 43 106 / 40%)
+  );
+  --radius-1: 8px;
+  --radius-2: 4px;
+  --menu-mob-background: rgba(34, 0, 112, 0.9);
+  --tr-ease300: all 300ms ease;
+  --bad-color: #ef0078;
+  --good-color: #0eff00;
 }
 
 body {
@@ -85,7 +103,7 @@ body {
 }
 
 .custom-button:hover::after {
-  box-shadow: 13px 13px 20px #d40f68, -13px -13px 20px #19ded1 !important;
+  box-shadow: 13px 13px 20px #d40f68, -13px -13px 20px var(--color-1) !important;
 }
 /* header buttons */
 
@@ -95,7 +113,13 @@ body {
 }
 .auth-button::after {
   content: "";
-  background: linear-gradient(to left, #8500ff, #5258ff, #004fcb, #19ded1);
+  background: linear-gradient(
+    to left,
+    #8500ff,
+    #5258ff,
+    #004fcb,
+    var(--color-1)
+  );
   background-size: 300% 100%;
   transition: all 400ms ease-in;
   box-shadow: 0 4px 15px 0 #5d3cfd;
@@ -193,8 +217,8 @@ body {
   padding: 4px;
 }
 .navbar-menu__links li a::after {
-  border-right: 2px solid #19ded1;
-  border-bottom: 2px solid #19ded1;
+  border-right: 2px solid var(--color-1);
+  border-bottom: 2px solid var(--color-1);
   border-radius: 4px 0;
   left: 0;
   right: 11px;
@@ -254,7 +278,13 @@ body {
   height: 106%;
 }
 .grad_button::after {
-  background: linear-gradient(to left, #8500ff, #5258ff, #004fcb, #19ded1);
+  background: linear-gradient(
+    to left,
+    #8500ff,
+    #5258ff,
+    #004fcb,
+    var(--color-1)
+  );
   background-size: 300% 100%;
   transition: all 400ms ease-in;
   box-shadow: 0 4px 15px 0 #5d3cfd;
@@ -262,8 +292,8 @@ body {
 /* hero section */
 
 .hero-button::after {
-  background: #5644ff;
-  box-shadow: 13px 13px 20px #19ded1, -13px -13px 20px #d40f68;
+  background: var(--color-3);
+  box-shadow: 13px 13px 20px var(--color-1), -13px -13px 20px #d40f68;
   transition: all 400ms ease-in;
   transform: skew(-30deg);
   -webkit-transform: skew(-30deg);
@@ -273,20 +303,13 @@ body {
 
 /* Platform section */
 .platform-section .card {
-  background: linear-gradient(
-    120deg,
-    rgb(1 43 106 / 40%),
-    rgb(139 19 239 / 40%),
-    rgb(43 0 255 / 40%),
-    rgb(11 68 255 / 40%),
-    rgb(1 43 106 / 40%)
-  );
+  background: var(--color-blur);
   width: 100%;
 }
 .proc_val::before {
   z-index: 5;
   background: var(--color-1);
-  box-shadow: inset 0 0 10px 5px #5644ff73;
+  box-shadow: inset 0 0 10px 5px var(--color-3) 73;
 }
 .proc_val {
   height: 30px;
@@ -298,8 +321,8 @@ body {
 }
 .proc_val::before {
   z-index: 5 !important;
-  background: #19ded1;
-  box-shadow: inset 0 0 10px 5px #5644ff73;
+  background: var(--color-1);
+  box-shadow: inset 0 0 10px 5px var(--color-3) 73;
 }
 .proc_bar {
   display: block;
@@ -354,7 +377,7 @@ body {
   z-index: 7;
 }
 .proc_bar::after {
-  background: #5644ff;
+  background: var(--color-3);
   z-index: 6;
 }
 .field_select_with {
@@ -364,7 +387,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
-  border-bottom: 2px solid #5644ff;
+  border-bottom: 2px solid var(--color-3);
 }
 .field_select_with::after {
   content: "";
@@ -374,11 +397,11 @@ body {
   bottom: 0;
   right: 0;
   z-index: 2;
-  background: linear-gradient(0deg, #5644ff, transparent);
+  background: linear-gradient(0deg, var(--color-3), transparent);
   z-index: -999;
 }
 /* changing  z-index: -999; */
-.curr_name{
+.curr_name {
   font-size: 20px;
   padding: 12px 12px 12px 0;
   color: #fff;
@@ -395,16 +418,9 @@ body {
   right: calc((100% - 100vw) / 2);
 }
 .buy__calc {
-  border: 2px solid #407dd9;
+  border: 2px solid var(--color-2);
   border-radius: 8px;
-  background: linear-gradient(
-    120deg,
-    rgb(1 43 106 / 40%),
-    rgb(139 19 239 / 40%),
-    rgb(43 0 255 / 40%),
-    rgb(11 68 255 / 40%),
-    rgb(1 43 106 / 40%)
-  );
+  background: var(--color-blur);
   backdrop-filter: blur(4px);
   padding: 40px;
   display: flex;
@@ -431,7 +447,7 @@ body {
 }
 .token_info > div > span {
   font-size: 18px;
-  color: #19ded1;
+  color: var(--color-1);
   font-weight: 600;
   line-height: 18px;
 }
@@ -440,7 +456,7 @@ body {
   padding-right: 25px;
 }
 .token_info > div::after {
-  background: linear-gradient(30deg, #5644ff, transparent);
+  background: linear-gradient(30deg, var(--color-3), transparent);
 }
 
 .token_info > div::after {
@@ -507,7 +523,7 @@ body {
   font-weight: 400;
   display: block;
   font-family: "Poppins", sans-serif;
-  color: #19ded1;
+  color: var(--color-1);
 }
 .tokenomics-cont-list-single:nth-child(1) {
   top: 0;
@@ -664,6 +680,16 @@ body {
   .buy__calc {
     padding: 12px;
     gap: 30px;
+  }
+  .options_time_staking > div > p:nth-child(1) {
+    font-size: 14px !important;
+  }
+  .select_time_staking > p,
+  .count_staking > p {
+    font-size: 14px !important;
+  }
+  .select_time_staking > div > div {
+    font-size: 14px !important;
   }
 }
 @media (max-width: 767px) {
@@ -846,7 +872,7 @@ body {
 .left-box:before {
   position: absolute;
   content: "";
-  background-color: #407dd9;
+  background-color: var(--color-2);
   width: 7%;
   height: 2px;
   left: 60%;
@@ -858,7 +884,7 @@ body {
 .right-box:before {
   position: absolute;
   content: "";
-  background-color: #407dd9;
+  background-color: var(--color-2);
   width: 7%;
   height: 2px;
   left: 33%;
@@ -866,22 +892,15 @@ body {
 }
 .box-bg-clr {
   background-color: rgba(34, 0, 112, 0.9);
-  background: linear-gradient(
-    120deg,
-    rgb(1 43 106 / 40%),
-    rgb(139 19 239 / 40%),
-    rgb(43 0 255 / 40%),
-    rgb(11 68 255 / 40%),
-    rgb(1 43 106 / 40%)
-  );
+  background: var(--color-blur);
   padding: 40px 30px 35px;
-  border: 2px solid #407dd9;
+  border: 2px solid var(--color-2);
 }
 .posi-relative {
   position: relative;
 }
 .bg-theme-clr {
-  background-color: #407dd9;
+  background-color: var(--color-2);
 }
 .year-btn {
   font-size: 16px;
@@ -913,36 +932,35 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.box-width-left{
+.box-width-left {
   width: 33%;
   position: relative;
 }
 .box-width-left::before {
   position: absolute;
   content: "";
-  background-color: #407dd9;
+  background-color: var(--color-2);
   width: 22%;
   height: 2px;
   left: -22%;
 }
-.box-width-right{
+.box-width-right {
   width: 33%;
   position: relative;
 }
 .box-width-right::before {
   position: absolute;
   content: "";
-  background-color: #407dd9;
+  background-color: var(--color-2);
   width: 22%;
   height: 2px;
   right: -22%;
 }
-.pattern-2{
+.pattern-2 {
   z-index: 99;
   top: 0;
   left: calc((100% - 100vw) / 2);
 }
-
 
 @media only screen and (max-width: 991px) {
   .border-line {
@@ -962,7 +980,7 @@ body {
   .year-btn {
     left: 20% !important;
   }
-  .box-width-left{
+  .box-width-left {
     width: 50% !important;
     margin-left: 27% !important;
     /* width: 15% !important; */
@@ -971,20 +989,19 @@ body {
     width: 15% !important;
     left: -15% !important;
   }
-  .box-width-right{
+  .box-width-right {
     width: 50% !important;
-    margin-left:4%;
+    margin-left: 4%;
   }
   .box-width-right::before {
     left: -15% !important;
     width: 15% !important;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
-  .pattern{
-    opacity: .2;
+  .pattern {
+    opacity: 0.2;
   }
   .border-line {
     left: 12% !important;
@@ -994,31 +1011,31 @@ body {
   }
   .left-box:before {
     left: 12% !important;
-        width: 48px !important;
+    width: 48px !important;
   }
   .right-box:before {
     left: 12% !important;
-        width: 48px !important;
+    width: 48px !important;
   }
   .year-btn {
     left: 12% !important;
   }
-  .box-width-left{
+  .box-width-left {
     width: 65% !important;
     margin-left: 19% !important;
     /* width: 15% !important; */
   }
-  .box-width-right{
+  .box-width-right {
     width: 65% !important;
-    margin-left:4%;
+    margin-left: 4%;
   }
 }
 @media only screen and (max-width: 540px) {
-  .box-width-left{
+  .box-width-left {
     width: 90% !important;
     margin-left: 12% !important;
   }
-  .box-width-right{
+  .box-width-right {
     width: 90% !important;
     margin-left: 12% !important;
   }
@@ -1039,14 +1056,14 @@ body {
   .year-btn {
     left: 20% !important;
   }
-  .year-btn:before{
+  .year-btn:before {
     position: absolute;
     content: "";
-    background-color: #407dd9;
+    background-color: var(--color-2);
     width: 71%;
     height: 2px;
     top: 16px;
-    right:100%;
+    right: 100%;
   }
 }
 
@@ -1054,26 +1071,26 @@ body {
   .year-btn {
     left: 22% !important;
   }
-  .year-btn:before{
+  .year-btn:before {
     width: 62% !important;
   }
+}
+@media only screen and (max-width: 393px) {
+  .year-btn:before {
+    width: 58% !important;
   }
-  @media only screen and (max-width: 393px) {
-    .year-btn:before{
-      width: 58% !important;
-    }
-    }
-    @media only screen and (max-width: 375px) {
-      .year-btn:before{
-        width: 55% !important;
-      }
-      }
-    
-      @media only screen and (max-width: 360px) {
-        .year-btn:before{
-          width: 50% !important;
-        }
-        }
+}
+@media only screen and (max-width: 375px) {
+  .year-btn:before {
+    width: 55% !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .year-btn:before {
+    width: 50% !important;
+  }
+}
 
 /* Team Section */
 .section__defipulse.teams_ {
@@ -1090,14 +1107,7 @@ body {
   position: relative;
   width: 200px;
   height: 250px;
-  background: linear-gradient(
-    120deg,
-    rgb(1 43 106 / 40%),
-    rgb(139 19 239 / 40%),
-    rgb(43 0 255 / 40%),
-    rgb(11 68 255 / 40%),
-    rgb(1 43 106 / 40%)
-  );
+  background: var(--color-blur);
   backdrop-filter: blur(4px);
   display: flex;
   border-radius: 14px;
@@ -1168,14 +1178,7 @@ body {
 }
 /* Footer */
 .footer {
-  background: linear-gradient(
-    120deg,
-    rgb(1 43 106 / 40%),
-    rgb(139 19 239 / 40%),
-    rgb(43 0 255 / 40%),
-    rgb(11 68 255 / 40%),
-    rgb(1 43 106 / 40%)
-  );
+  background: var(--color-blur);
   backdrop-filter: blur(4px);
   padding: 2.5rem 0;
   position: relative;
@@ -1232,10 +1235,10 @@ body {
   display: flex;
   flex-direction: column;
 }
-.perlinlink__text p{
+.perlinlink__text p {
   font-size: 14px;
 }
-.perlinlink__text span{
+.perlinlink__text span {
   font-size: 14px;
 }
 .footer__secondarylink li.perlinlink a img {
@@ -1247,7 +1250,13 @@ body {
   background-color: black;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, #8500ff, #5258ff, #004fcb, #19ded1);
+  background: linear-gradient(
+    to top,
+    #8500ff,
+    #5258ff,
+    #004fcb,
+    var(--color-1)
+  );
   border-radius: 10px;
 }
 
@@ -1279,7 +1288,7 @@ body {
   padding: 20px;
 }
 .acc_window > div:first-child {
-  background: #1a0066;
+  background: var(--color-4);
   border-radius: 8px 8px 0 0;
 }
 .user_info {
@@ -1306,14 +1315,7 @@ body {
   transform: scale(117%);
 }
 .acc_window > div:last-child {
-  background: linear-gradient(
-    120deg,
-    rgb(1 43 106 / 40%),
-    rgb(139 19 239 / 40%),
-    rgb(43 0 255 / 40%),
-    rgb(11 68 255 / 40%),
-    rgb(1 43 106 / 40%)
-  );
+  background: var(--color-blur);
   border-radius: 0 0 8px 8px;
   backdrop-filter: blur(4px);
   overflow: hidden;
@@ -1331,7 +1333,7 @@ body {
   color: #fff;
 }
 .user_info .userbal {
-  color: #19ded1;
+  color: var(--color-1);
   font-weight: 600;
 }
 .account_menu {
@@ -1348,8 +1350,8 @@ body {
   position: relative;
 }
 .account_menu.this_menu::before {
-  background: linear-gradient(90deg, #19ded1b5, transparent);
-  border-left: 3px solid #19ded1;
+  background: linear-gradient(90deg, var(--color-1) b5, transparent);
+  border-left: 3px solid var(--color-1);
 }
 .account_menu > p {
   font-size: 18px;
@@ -1441,7 +1443,13 @@ body {
   margin: auto;
 }
 .grad_button::after {
-  background: linear-gradient(to left, #8500ff, #5258ff, #004fcb, #19ded1);
+  background: linear-gradient(
+    to left,
+    #8500ff,
+    #5258ff,
+    #004fcb,
+    var(--color-1)
+  );
   background-size: 300% 100%;
   transition: all 400ms ease-in;
   box-shadow: 0 4px 15px 0 #5d3cfd;
@@ -1466,7 +1474,7 @@ body {
 }
 .static_bl > p:nth-child(1),
 .total_coin > b {
-  color: #19ded1;
+  color: var(--color-1);
   font-size: 18px;
 }
 .accoint_content_bar {
@@ -1503,7 +1511,7 @@ body {
 }
 .static_bl > p:nth-child(1),
 .total_coin > b {
-  color: #19ded1;
+  color: var(--color-1);
   font-size: 18px;
 }
 .withdrawal_info > .form-group {
@@ -1537,8 +1545,8 @@ input.form-control:focus-visible {
 }
 .form-field::after,
 .navbar-menu__links li a::after {
-  border-right: 2px solid #19ded1;
-  border-bottom: 2px solid #19ded1;
+  border-right: 2px solid var(--color-1);
+  border-bottom: 2px solid var(--color-1);
   border-radius: 4px 0;
   left: 0;
   right: 11px;
@@ -1585,7 +1593,7 @@ input.form-control:focus-visible {
   font-size: 14px;
   text-align: center;
   display: block;
-  color: #19ded1;
+  color: var(--color-1);
   margin-top: 3px;
   transition: all 300ms ease;
 }
@@ -1599,7 +1607,7 @@ input.form-control:focus-visible {
     z-index: 667;
     width: 100%;
     left: 0;
-    background: #1a0066;
+    background: var(--color-4);
     z-index: 8 !important;
   }
   .left_menu_bar > .acc_window > div:first-child {
@@ -1620,9 +1628,9 @@ input.form-control:focus-visible {
     padding: 16px 18px;
   }
   .account_menu.this_menu::before {
-    background: linear-gradient(0deg, #19ded1b5, transparent);
+    background: linear-gradient(0deg, var(--color-1) b5, transparent);
     border-left: none;
-    border-bottom: 3px solid #19ded1;
+    border-bottom: 3px solid var(--color-1);
   }
   .account_menu > p {
     display: none;
@@ -1918,10 +1926,19 @@ input.form-control:focus-visible {
 .accoint_content_bar .table_bouties > .rd_bounti:first-child > div {
   font-size: 18px;
 }
-.staking_list .rd_bounti > div {
+/* .staking_list .rd_bounti > div {
   width: 14.28%;
-}
+} */
 .rd_bounti {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 10px 0;
+  align-items: center;
+}
+.rd_bounti1 {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1964,6 +1981,15 @@ input.form-control:focus-visible {
 .accoint_content_bar .table_bouties > .rd_bounti:first-child > div {
   font-size: 18px;
 }
-.refferal_list .rd_bounti > div {
+/* .refferal_list .rd_bounti > div {
   width: 25%;
+} */
+@media only screen and (max-width: 767px) {
+  .staking_account {
+    width: 95% !important;
+  }
+  .rd_bounti{
+    flex-direction: column;
+  }
+
 }

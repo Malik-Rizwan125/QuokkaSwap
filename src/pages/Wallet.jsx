@@ -2,6 +2,7 @@
 import React from 'react'
 import WalletComponent from '../components/accountPageComponents/WalletComponent'
 import LeftMenuBar from '../components/accountPageComponents/LeftMenuBar'
+import Footer from "../components/homePageComponents/Footer";
 
 export default function Staking() {
   return (
@@ -12,6 +13,7 @@ export default function Staking() {
                  <WalletComponent />
 </section>
 </div>
+{/* <Footer /> */}
     </>
 
   )

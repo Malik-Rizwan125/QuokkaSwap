@@ -35,11 +35,14 @@ export default function Header() {
           <ul className="hidden xl:flex">
             {NavbarData.map((item, index) => (
               <li key={index} className="mx-4">
-                <Link className="font-semibold text-base capitalize cursor-pointer" to={item.path}>
+                <Link
+                  className="font-semibold text-base capitalize cursor-pointer"
+                  to={item.path}
+                >
                   {item.title}
                 </Link>
               </li>
-            ))}
+            ))}
           </ul>
           <div className="hidden xl:flex items-center z-0">
             <CustomButton
@@ -70,28 +73,40 @@ export default function Header() {
               : "navbar-menu"
           }
         >
-         <ul className="navbar-menu__links">
+          <ul className="navbar-menu__links">
             <li>
-              <Link to="/">Home</Link>
-            </li>  
-            <Link to="/buy">
+              <Link to="/" onClick={() => setOpenToggle(!openToggle)}>
+                Home
+              </Link>
+            </li>
+            <Link to="/buy" onClick={() => setOpenToggle(!openToggle)}>
               <li>
-              <a href=""> Buy</a> 
+                <a href=""> Buy</a>
               </li>
             </Link>
             <li>
-              <Link to="/wallet">Wallet</Link>
+              <Link to="/wallet" onClick={() => setOpenToggle(!openToggle)}>
+                Wallet
+              </Link>
             </li>
             <li>
-              <Link to="/staking">Staking</Link>
+              <Link to="/staking" onClick={() => setOpenToggle(!openToggle)}>
+                Staking
+              </Link>
             </li>
             <li>
-              <Link to="/referals">Referral</Link>
+              <Link to="/referals" onClick={() => setOpenToggle(!openToggle)}>
+                Referral
+              </Link>
             </li>
           </ul>
           <ul className="navbar__links-menu">
             <li>
-              <Link className="grad_button" to="/account">
+              <Link
+                className="grad_button"
+                to="/account"
+                onClick={() => setOpenToggle(!openToggle)}
+              >
                 Login
               </Link>
             </li>

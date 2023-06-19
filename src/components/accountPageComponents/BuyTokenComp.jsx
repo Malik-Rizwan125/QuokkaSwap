@@ -10,6 +10,7 @@ export default function BuyTokenComp() {
           className="acc_window one_ls aos-init aos-animate"
           data-aos="zoom-in"
         >
+          
           <div>
             <div className="name_page">Bonuses</div>
           </div>

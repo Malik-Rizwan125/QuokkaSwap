@@ -190,7 +190,7 @@ body {
   color: #fff;
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 4px;
 }
 .navbar-menu__links li a::after {
   border-right: 2px solid #19ded1;
